@@ -4,7 +4,8 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/mochola/',
+  // The deployed app is served from the hosting domain root.
+  base: '/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
